@@ -1,0 +1,473 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*------------------ navigation -------------------*/
+.top-nav{
+    display: flex;
+    justify-content: right;
+    padding-top: 8px;
+}
+.top-nav p{
+    color: rgb(99, 99, 102);
+    font-size: 14px;
+    margin-left: 50px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* --------- */
+@media only screen and (max-width: 600px) {
+    .top-nav{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+/*---- main navbar -----*/
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+}
+.navbar-link{
+    width: 70%;
+    display: flex;
+    justify-content: right;
+}
+.nav-link{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: gray;
+    margin-left: 20px;
+}
+#booking-appoinment{
+    border: 1px solid gray;
+    padding: 3px 10px;
+    margin-top: 3px;
+}
+#booking-appoinment:hover{
+    border: 1px solid orange;
+}
+@media only screen and (max-width: 800px) {
+    .navbar-ul{
+        background-color: white;
+        padding: 10px 20px;
+        margin: auto;
+    }
+  }
+
+
+/*------------------- banner section --------------------*/
+#banner-section{
+    /* background: radial-gradient(ellipse farthest-corner at 90% 90%,
+     aqua 8%, #1e90ff 50%, beige); */
+     background-color: rgb(162, 162, 163);
+     background-image: url('images/banner-bg.jpg');
+     background-blend-mode:multiply, darken;
+     padding: 50px 0px;
+}
+.banner-detail-img{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding: 0%;
+}
+.banner-details p{
+    font-size: 20px;
+    color: rgb(12, 12, 12);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.banner-details h2{
+    max-width: 600px;
+    /* color: rgb(24, 24, 65); */
+    color: rgb(15, 247, 255);
+    font-size: 48px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.banner-button{
+    width: 220px;
+    height: 45px;
+    border: none;
+    background-color: bisque;
+    font-size: 18px;
+    color: rgb(24, 24, 65);
+    margin-top: 40px;
+}
+
+/*---------- banner bottom box ----------*/
+.banner-bottom-boxes{
+    position: relative;
+    top: -80px;
+}
+.banner-bottom-box{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(32, 32, 32);
+    background-color: rgb(38, 206, 206);
+    border-radius: 3px;
+    padding: 15px 5px 5px 15px;
+    margin-top: 10px;
+}
+.banner-bottom-box2{
+    width: 350px;
+    margin: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(27, 24, 44);
+    border-radius: 3px;
+    padding: 15px 5px 5px 15px;
+    margin-top: 10px;
+}
+
+
+
+/*-------------- Dental Service -------------*/
+.dental-container{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.image-boxes{
+    display: flex;
+}
+.left-img{
+    margin-right: 15px;
+}
+.left-img img{
+    margin-top: 10px;
+}
+.right-img {
+    margin-top: 10px;
+    margin-top: 70px;
+}
+.right-img img{
+    margin-top: 10px;
+}
+@media only screen and (max-width: 800px) {
+    .image-boxes{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+.dental-info{
+    margin-left: 3%;
+    padding-top: 100px;
+}
+.dental-info h3{
+    color: rgb(23, 17, 53);
+    font-size: 38px;
+    margin-bottom: 30px;
+}
+.dental-info p{
+    color: rgb(53, 53, 53);
+    font-size: 18px;
+}
+
+
+/*-------------------- our doctor --------------------*/
+.carousel-indicators{
+    top: auto;
+    left: 0px;
+    bottom: -70px;
+}
+.slider-part{
+    margin-top: 100px;
+    background-color: rgb(162, 162, 163);
+     background-image: url('images/banner-bg.jpg');
+     background-blend-mode:multiply, darken;
+    height: 100%;
+    padding: 110px 0px;
+}
+.single-box{
+    width: 340px;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.img-style{
+    width: 100%;
+    height: 280px;
+}
+.doctor-name{
+    margin-bottom: 25px;
+    height: 60px;
+    background-color: #03c7c7;
+    text-align: center;
+    padding-top: 5px;
+}
+.doctor-name h4{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+.doctor-name p{
+    font-size: 14px;
+    color: white;
+}
+.date{
+    display: flex;
+    justify-content: space-between;
+    padding:0px 10px;
+    border-top: 1px solid rgb(214, 214, 214);
+}
+.doctor-more{
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    background-color: white;
+    border: 1px solid aqua;
+    font-size: 13px;
+    padding: 8px 15px;
+}
+
+.carousel-control-prev{
+    margin-left: -120px;
+    color: black;
+}
+.carousel-control-next{
+    margin-right: -100px;
+    color: black;
+}
+@media only screen and (max-width: 800px) {
+    .single-box{
+        margin: 10px auto;
+    }
+    .carousel-control-next{
+        display: none;
+    }
+  }
+
+
+
+/*---------------------- professional-doctor ------------------*/
+.professional-doctor{
+    background-color: rgb(228, 255, 255);
+}
+.doctor-container{
+    padding: 50px 0px 0px 0px;
+}
+.doctor-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.doctor-details h2{
+    color: rgb(23, 23, 56);
+    margin:30px 0px 70px 0px;
+}
+.doctor-details h4{
+    font-size: 24px;
+    color: rgb(23, 23, 56);
+}
+.doctor-details p{
+    color: rgb(23, 23, 56);
+    font-size: 14px;
+}
+.doctor-details h5{
+    color: rgb(23, 23, 56);
+    font-size: 20px;
+    margin: 30px 0px;
+}
+.doctor-social i{
+    font-size: 18px;
+    margin-right: 10px;
+}
+.doctor-social{
+    margin-top: 40px;
+}
+
+.doctor-emilson-image img{
+    width: 550px;
+    height: 600px;
+}
+@media only screen and (max-width: 800px) {
+    .doctor-emilson-image img{
+        width: 100%;
+        height: 300px;
+    }
+  }
+
+
+
+/*---------------------- service we provide ----------------------*/
+.single-service{
+    width: 350px;
+    padding: 0%;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+.single-service img{
+    width: 100%;
+    height: 200px;
+}
+.single-service h4{
+    color: rgb(31, 31, 65);
+    margin-top: 25px;
+}
+
+
+
+/*-------------------- appoinment booking -----------------------*/
+
+#appointment{
+    background-color: rgb(109, 109, 109);
+    background-image: url('images/banner-bg.jpg');
+    background-blend-mode:multiply, darken;
+    background-attachment: fixed;
+    margin-top: 100px;
+    padding: 100px 0px;
+}
+.appointment-box{
+    border-right: 1px solid rgb(29, 29, 29);
+}
+.booking-form{
+    display: flex;
+    flex-direction: column;
+}
+.booking-form input, select{
+    width: 500px;
+    padding: 7px 10px;
+    margin-top: 10px;
+    border:none;
+}
+
+.contact-info{
+    width: 350px;
+    margin-top: 60px;
+    margin-left: 30px;
+}
+.contact-info p{
+    color: white;
+}
+.appointment-button{
+    width: 120px;
+    border: 1px solid aqua;
+    margin-top: 20px;
+    padding: 6px 0px;
+    border-radius: 2px;
+}
+.appointment-button:hover{
+    border: 1px solid gray;
+    background-color: rgb(31, 216, 216);
+}
+
+@media only screen and (max-width: 800px) {
+    .booking-form input, select{
+        width: 100%;
+        padding: 7px 10px;
+        margin-top: 10px;
+        border:none;
+    }
+    .contact-info{
+        width: 350px;
+        margin-top: 110px;
+
+    }
+  }
+
+
+
+  /*--------------------- why chose us -------------------*/
+  .facility-boxes{
+      width: 90%;
+      margin: auto;
+      margin-top: 120px;
+  }
+  .facility-boxes h4{
+      font-size: 30px;
+      text-align: center;
+      color: rgb(30, 30, 63);
+      margin-bottom: 70px;
+  }
+  .facility-box{
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 15px;
+  }
+  .facility-box i{
+      font-size: 80px;
+      color: rgb(16, 192, 192);
+  }
+  .facility-box h5{
+      color: rgb(28, 28, 65);
+      font-size: 20px;
+      margin-top: 15px;
+  }
+  .facility-box p{
+      text-align: center;
+  }
+
+
+  /*--------------------- FOOTER ---------------------*/
+  .footer-section{
+    background-color: rgb(109, 109, 109);
+    background-image: url('images/banner-bg.jpg');
+    background-blend-mode:multiply, darken;
+    margin-top: 100px;
+    padding: 70px 0px 20px 0px;
+    color: white;
+  }
+  .footer-conetainer{
+      display: flex;
+      justify-content: space-between;
+  }
+  .contact-us{
+      width: 350px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 20px;
+  }
+  .contact-us h4{
+      margin-bottom: 50px;
+      color: rgb(241, 241, 241);
+  }
+  .contact-num{
+      font-size: 30px;
+      margin-top: 30px;
+      color: rgb(233, 233, 233);
+  }
+  .opening-time{
+      width: 350px;
+      background-color: rgb(37, 37, 75);
+      padding: 20px 15PX 0PX 15px;
+  }
+  .day-time{
+      display: flex;
+      justify-content: space-between;
+      color: white;
+  }
+  .footer-book-btn{
+      width: 250px;
+      border: none;
+      color: rgb(238, 238, 238);
+      background-color: rgb(31, 199, 199);
+      padding: 8px 0px;
+      font-size: 18px;
+      margin-top: 30px;
+      margin-bottom: -60px;
+      margin-left: 35px;
+  }
+  .important-link{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      line-height: 30px;
+  }
+  .important-link h4{
+      color: rgb(240, 240, 240);
+  }
